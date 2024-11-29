@@ -2,8 +2,8 @@
 aliases: 
 tags: 
 created: 2024-11-29 19:20 PM +07:00
-title: Lone's working notes
-modified: 2024-11-30 00:10 AM +07:00
+title: A curious philomath
+modified: 2024-11-30 03:45 AM +07:00
 ---
 Here lies the messy clump of my #thought, #idea, #personal/opinion, **knowledge** and **misknowledge**.
 
