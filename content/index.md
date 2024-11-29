@@ -3,12 +3,22 @@ aliases:
 tags: 
 created: 2024-11-29 19:20 PM +07:00
 title: Lone's working notes
-modified: 2024-11-29 19:40 PM +07:00
+modified: 2024-11-30 00:04 AM +07:00
 ---
-Here lies the messy clump of my thoughts, ideas, opinions, knowledge and misknowledge.
+Here lies the messy clump of my #thought, #idea, #personal/opinion, **knowledge** and **misknowledge**.
 
-The notes here are a (partial) digital copy of what's on my mind. Those are written for myself and are my thinking environment. So if you found them to be confusing, under-explained or disorganized, please kindly understand.
+The notes here are a (partial) digital copy of what's on my mind. They are written for myself and are my thinking environment. So if you found them to be confusing, under-explained or disorganized, please kindly understand.
 
-There is basically no navigation or structure to this site. Though if you are interested in exploring, you can make use of the search button or simply clicking on any note on the left panel and follow the links.
+There is basically no navigation or structure to this site. Though if you are interested in exploring, you can 
+- make use of the search function
+	- the search bar is located on the left panel
+	- or simply hit `Ctrl/Cmd + K`) 
+- click on any note on the left panel
+	- then follow linked notes
+- browse the graph view
+	- the local graph view is located on the right panel
+		- click on the small button in the top right corner to see the global graph
+	- or search for `graph view`
 
-I publish this site with the hope of gaining knowledge, if you know anything that mind interested me or find any flaw in my notes, please let me know in the comment section (there is one at the bottom of every note, but you will need a Github account to for that).
+I publish this site with the hope of gaining knowledge, if you know anything that mind interested me or find any flaw in my notes, please let me know in the comment section. 
+- There is a comment section at the bottom of every note. To comment, you need a GitHub account and then authorize the [giscus app](https://github.com/apps/giscus) to [post on your behalf](https://docs.github.com/en/developers/apps/identifying-and-authorizing-users-for-github-apps) using the GitHub OAuth flow.

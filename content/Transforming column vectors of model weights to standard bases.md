@@ -1,7 +1,7 @@
 ---
 aliases: 
 tags: 
-modified: 2024-11-29 11:01 AM +07:00
+modified: 2024-11-29 23:00 PM +07:00
 created: 2024-11-27 10:49 AM +07:00
 ---
 #cs/ai/ml/theory #hypothesis #idea/research #question
@@ -11,13 +11,13 @@ created: 2024-11-27 10:49 AM +07:00
   $$W' = W \cdot W_{rot}$$
 - Then we would have a nearly sparse matrix $W'$ with a few nearly 1 but not exactly 1 and a lot of nearly 0 but not exactly 0
 - Then take the delta of $W'$ with the sparse matrix
-$$
-\begin{align}
-W^* &= round(W')\\
-delta_W &= W^* - W'
-\end{align}
-$$
-	$delta_W$ would be a matrix of near 0 values
+  $$
+  \begin{align}
+  W^* &= round(W')\\
+  delta_W &= W^* - W'
+  \end{align}
+  $$
+  $delta_W$ would be a matrix of near 0 values
 - What if the values in $delta_W$ follows a Gaussian ? Then we have decomposed a weight matrix $W$ into
 	- a lower-rank matrix $W_{rot}$ 
 	- a sparse vector $W^*$

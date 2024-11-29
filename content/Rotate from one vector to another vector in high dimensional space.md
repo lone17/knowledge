@@ -1,7 +1,7 @@
 ---
 aliases: 
 tags: 
-modified: 2024-11-29 15:28 PM +07:00
+modified: 2024-11-29 22:51 PM +07:00
 created: 2024-11-28 17:31 PM +07:00
 ---
 #maths/algebra 
@@ -40,7 +40,7 @@ Here are the steps:
 	  sin(\theta) & cos(\theta)
 	  \end{bmatrix}
 	  $$
-	  where $cost(\theta) = \frac{x \cdot y}{||x|| ||y||}$
+	  where $cos(\theta) = \frac{x \cdot y}{||x|| ||y||}$
 		- then projected back to n-dimensional ($\cdot [u \; v]^T$)
 	- The projection in to this space is given by 
 	  $$P = uu^T + vv^T$$

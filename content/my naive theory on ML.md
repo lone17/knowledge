@@ -1,10 +1,10 @@
 ---
 aliases: 
 tags: 
-modified: 2024-09-29 15:22 PM +07:00
+modified: 2024-11-29 22:54 PM +07:00
 created: 2024-09-29 10:39 AM +07:00
 ---
-#tht 
+#thought  
 
 I like probing the embeddings space
 
