@@ -11,8 +11,8 @@ export const sharedPageComponents: SharedLayout = {
       options: {
         repo: "lone17/knowledge",
         repoId: "R_kgDONWep-Q",
-        category: "Q&A",
-        categoryId: "DIC_kwDONWep-c4CkugS",
+        category: "Announcements",
+        categoryId: "DIC_kwDONWep-c4CkugQ",
         mapping: "pathname",
         strict: true,
         reactionsEnabled: true,
