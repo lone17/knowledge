@@ -3,7 +3,7 @@ aliases:
 tags: 
 created: 2024-11-29 19:20 PM +07:00
 title: Lone's working notes
-modified: 2024-11-30 00:04 AM +07:00
+modified: 2024-11-30 00:10 AM +07:00
 ---
 Here lies the messy clump of my #thought, #idea, #personal/opinion, **knowledge** and **misknowledge**.
 
@@ -12,7 +12,7 @@ The notes here are a (partial) digital copy of what's on my mind. They are writt
 There is basically no navigation or structure to this site. Though if you are interested in exploring, you can 
 - make use of the search function
 	- the search bar is located on the left panel
-	- or simply hit `Ctrl/Cmd + K`) 
+	- or simply hit `Ctrl/Cmd + K` 
 - click on any note on the left panel
 	- then follow linked notes
 - browse the graph view
