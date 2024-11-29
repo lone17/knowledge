@@ -1,5 +1,5 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 // @ts-ignore
 import script from "./scripts/comments.inline"
 
@@ -27,8 +27,7 @@ function boolToStringBool(b: boolean): string {
 export default ((opts: Options) => {
   const Comments: QuartzComponent = ({ displayClass, fileData, cfg }: QuartzComponentProps) => {
     // check if comments should be displayed according to frontmatter
-    const disableComment: boolean =
-      !fileData.frontmatter?.comments || fileData.frontmatter?.comments === "false"
+    const disableComment: boolean = fileData.frontmatter?.comments === "false"
     if (disableComment) {
       return <></>
     }
