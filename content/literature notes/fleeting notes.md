@@ -1,4 +1,6 @@
 ---
+aliases: 
+tags: 
 created: 2023-11-25 01:55 AM +07:00
 ---
 #zettelkasten 

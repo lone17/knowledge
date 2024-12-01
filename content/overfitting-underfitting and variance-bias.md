@@ -1,5 +1,7 @@
 ---
-modified: 2024-04-15 02:52 AM +07:00
+aliases: 
+tags: 
+modified: 2024-11-30 17:38 PM +07:00
 created: 2024-02-12 01:30 AM +07:00
 ---
 #cs/ai/ml/theory 

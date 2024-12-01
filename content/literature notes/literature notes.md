@@ -1,3 +1,8 @@
+---
+aliases: 
+tags: 
+created: 2023-11-28 19:28 PM +07:00
+---
 #zettelkasten 
 ref: [Zettelkasten Method Explained: A Beginner's Guide - YouTube](https://www.youtube.com/watch?v=GpV47rUYk8I)
 

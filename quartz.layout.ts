@@ -18,6 +18,7 @@ export const sharedPageComponents: SharedLayout = {
         reactionsEnabled: true,
         inputPosition: "top",
         darkTheme: "noborder_dark",
+        lightTheme: "noborder_light",
         themeUrl: "https://giscus.app/themes",
       },
     }),
