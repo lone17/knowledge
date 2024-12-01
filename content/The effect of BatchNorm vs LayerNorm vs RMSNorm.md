@@ -1,7 +1,7 @@
 ---
 aliases: 
 tags: 
-modified: 2024-11-20 01:00 AM +07:00
+modified: 2024-12-01 16:38 PM +07:00
 created: 2024-11-19 22:06 PM +07:00
 ---
 #cs/ai/ml/theory #hypothesis
@@ -37,8 +37,6 @@ created: 2024-11-19 22:06 PM +07:00
 	- RMSNorm normalizes the features by scaling by RMS
 		- This essentially convert the activations to unit vectors
 		- Which means the features have standard distribution
-
-
 # references
 [^1]: [[Root Mean Square Layer Normalization]]
 [^2]: [[Instruction Tuning with Human Curriculum]]

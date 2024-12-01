@@ -1,6 +1,8 @@
 ---
+aliases: 
+tags: 
 created: 2024-01-23 17:30 PM +07:00
-modified: 2024-01-23 17:33 PM +07:00
+modified: 2024-12-01 16:22 PM +07:00
 ---
 #idea
 

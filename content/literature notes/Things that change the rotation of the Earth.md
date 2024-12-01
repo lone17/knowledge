@@ -1,6 +1,8 @@
 ---
+aliases: 
+tags: 
 created: 2023-12-22 07:09 AM +07:00
-modified: 2023-12-31 07:14 AM +07:00
+modified: 2024-12-01 16:29 PM +07:00
 ---
 #physics/astrology 
 

@@ -1,7 +1,7 @@
 ---
 aliases: 
 tags: 
-modified: 2024-11-29 22:51 PM +07:00
+modified: 2024-12-01 16:38 PM +07:00
 created: 2024-11-28 17:31 PM +07:00
 ---
 #maths/algebra 

@@ -1,6 +1,8 @@
 ---
+aliases: 
+tags: 
 created: 2023-12-24 03:48 AM +07:00
-modified: 2023-12-31 07:15 AM +07:00
+modified: 2024-12-01 16:29 PM +07:00
 ---
 #cs/ai/ml/nlp/llm/training 
 

@@ -1,8 +1,9 @@
 ---
 aliases: 
-modified: 2024-11-22 12:19 PM +07:00
+modified: 2024-12-01 16:40 PM +07:00
 tags:
   - cs/ai/ml/mechanistic-intepretation
+  - "#cs/ai/ml/nlp/llm"
 created: 2024-10-24 14:57 PM +07:00
 ---
 # Control Vectors vs Prompting

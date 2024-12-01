@@ -3,8 +3,9 @@ aliases:
 tags:
   - cs/ai/ml/mechanistic-intepretation
   - cs/ai/ml/theory
+  - "#idea/research"
 created: 2024-11-05 12:02 PM +07:00
-modified: 2024-11-05 21:33 PM +07:00
+modified: 2024-12-01 16:39 PM +07:00
 ---
 # hypothesis
 ## activation space is Euclidean

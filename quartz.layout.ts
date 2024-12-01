@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { byFrontMatterModifiedDateThenTitle } from "./quartz/components/myUltils"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -46,6 +47,12 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
+    Component.RecentNotes({
+      title: "Recently Updated",
+      limit: 5,
+      showTags: true,
+      sort: byFrontMatterModifiedDateThenTitle(),
+    }),
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
