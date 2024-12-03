@@ -3,7 +3,7 @@ aliases:
   - "@{{citekey}}"
 tags:
   - integration/zotero
-modified: 2024-12-04 02:03 AM +07:00
+modified: 2024-12-04 02:19 AM +07:00
 created: 2024-07-23 16:20 PM +07:00
 ---
 > [!Cite]
@@ -56,17 +56,17 @@ created: 2024-07-23 16:20 PM +07:00
 
 {%- macro highlightType(annot) -%}
 {%- if annot.colorCategory == "Red" -%}
-<mark class="hltr-{{annot.colorCategory.toLowerCase()}}">Question/Critic</mark>
+<mark style="background: #FF5582A6;">Question/Critic</mark>
 {%- elif annot.colorCategory == "Orange" -%}
-<mark class="hltr-{{annot.colorCategory.toLowerCase()}}">External Insight</mark>
+<mark style="background: #FFB86CA6;">External Insight</mark>
 {%- elif annot.colorCategory == "Yellow" -%}
-<mark class="hltr-{{annot.colorCategory.toLowerCase()}}">Note</mark>
+<mark style="background: #FFF3A3A6;">Note</mark>
 {%- elif annot.colorCategory == "Blue" -%}
-<mark class="hltr-{{annot.colorCategory.toLowerCase()}}">Claim</mark>
+<mark style="background: #ADCCFFA6;">Claim</mark>
 {%- elif annot.colorCategory == "Green" -%}
-<mark class="hltr-{{annot.colorCategory.toLowerCase()}}">Finding</mark>
+<mark style="background: #BBFABBA6;">Finding</mark>
 {%- elif annot.colorCategory == "Purple" -%}
-<mark class="hltr-{{annot.colorCategory.toLowerCase()}}">Important</mark>
+<mark style="background: #D2B3FFA6;">Important</mark>
 {%- endif -%}
 {%- endmacro -%} ^e0c377
 
@@ -76,7 +76,7 @@ created: 2024-07-23 16:20 PM +07:00
 {{highlightType(annot)}} | {{viewInZotero(annot)}} 
 {%- else -%}
 {{annot.type | capitalize}} | {{viewInZotero(annot)}}
-{%- endif %} ^{{annot.id}}
+{%- endif %} ^{{annot.id | lower}}
 {% if annot.annotatedText -%}
 >“{{annot.annotatedText}}”
 {%- elif annot.imageRelativePath -%}

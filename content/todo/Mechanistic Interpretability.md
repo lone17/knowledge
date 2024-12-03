@@ -7,7 +7,7 @@ tags:
   - cs/ai/ml/modular-learning
   - cs/ai/ml/mechanistic-interpretability
 created: 2024-10-24 15:23 PM +07:00
-modified: 2024-12-04 02:05 AM +07:00
+modified: 2024-12-04 02:20 AM +07:00
 ---
 > This is the master note for Mechanistic Interpretability
 
@@ -51,7 +51,7 @@ modified: 2024-12-04 02:05 AM +07:00
 	- but need not be aligned with the **privileged bases**
 - The network represents **features** as linear combinations of neurons
 - Non-orthognality means that **features** interfere with one another
-   ![[The Linear Representation Hypothesis and the Geometry of Large Language Models#^BF82QTG4]]
+   ![[The Linear Representation Hypothesis and the Geometry of Large Language Models#^bf82qtg4]]
 ---
 ## Superposition Hypothesis
 - The representation may encode features not with the $n$ basis directions (**neurons**) but with $\propto exp(n)$ possible *almost orthogonal directions*. 
