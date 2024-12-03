@@ -7,7 +7,7 @@ tags:
   - cs/ai/ml/modular-learning
   - cs/ai/ml/mechanistic-interpretability
 created: 2024-10-24 15:23 PM +07:00
-modified: 2024-12-04 00:38 AM +07:00
+modified: 2024-12-04 02:05 AM +07:00
 ---
 > This is the master note for Mechanistic Interpretability
 
@@ -17,7 +17,7 @@ modified: 2024-12-04 00:38 AM +07:00
 - a paradigm shift in interpretability: **surface-level analysis** (input/output relations) → **inner interpretability** (internal mechanisms) [^1]
 	- similar to the shift from behaviourism to cognitive neuroscience in psychology
 	- Mech Interp is an approach toward inner interpretability
-![[Mechanistic Interpretability for AI Safety -- A Review#^f4c251]]
+![[Mechanistic Interpretability for AI Safety -- A Review#^XV6M4CYU]]
 
 ---
 # some terminologies
@@ -42,7 +42,7 @@ modified: 2024-12-04 00:38 AM +07:00
 ---
 - **Privileged bases**
 	- the *standard bases* of the representation space
-	![[Mechanistic Interpretability for AI Safety -- A Review#^0298c1]]
+	![[Mechanistic Interpretability for AI Safety -- A Review#^4K3TIV95]]
 ---
 # hypotheses
 ---
@@ -51,14 +51,14 @@ modified: 2024-12-04 00:38 AM +07:00
 	- but need not be aligned with the **privileged bases**
 - The network represents **features** as linear combinations of neurons
 - Non-orthognality means that **features** interfere with one another
-   ![[The Linear Representation Hypothesis and the Geometry of Large Language Models#^18e1a6]]
+   ![[The Linear Representation Hypothesis and the Geometry of Large Language Models#^BF82QTG4]]
 ---
 ## Superposition Hypothesis
 - The representation may encode features not with the $n$ basis directions (**neurons**) but with $\propto exp(n)$ possible *almost orthogonal directions*. 
 ![[assets/Mechanistic Interpretability/attachment_1.jpg]]
 ---
 - *Neural networks represent more features than they have neurons by encoding features in ovelapping combination of neurons* [^1]
-![[Mechanistic Interpretability for AI Safety -- A Review#^f80ec5]]
+![[Mechanistic Interpretability for AI Safety -- A Review#^DDAM3EFV]]
 ---
 - Non-orthogonality means that features interfere with one another.
 ![[assets/Mechanistic Interpretability/attachment.jpg]]

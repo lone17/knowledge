@@ -5,7 +5,7 @@ tags:
   - "#thought"
   - cs/ai/ml/theory
 created: 2024-10-29 17:08 PM +07:00
-modified: 2024-12-04 01:25 AM +07:00
+modified: 2024-12-04 01:26 AM +07:00
 ---
 # consecutive matrix transformations are series of change of basis in activation space
 - initial vector space with basis `{python} [1, 0], [0, 1]`, the yellow region indicates ReLU operation

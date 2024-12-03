@@ -3,7 +3,7 @@ aliases:
   - "@park2024"
 tags:
   - integration/zotero
-modified: 2024-11-30 17:19 PM +07:00
+modified: 2024-12-04 02:03 AM +07:00
 created: 2024-07-23 16:20 PM +07:00
 ---
 > [!Cite]
@@ -30,14 +30,9 @@ created: 2024-07-23 16:20 PM +07:00
 # Annotations
 ![[Highlight Colour Codings#Highlighting colour codes]]
 ## From Zotero
-**Imported: 2024-12-01**^e0c377
+**Imported: 2024-12-04**^e0c377
 
-
-<mark class="hltr-yellow">Note</mark> | [View in local Zotero: page 2](zotero://open-pdf/library/items/6GBATL98?page=2&annotation=BF82QTG4)
-
->[!note] 
+>[!quote] <mark class="hltr-yellow">Note</mark> | [View in local Zotero: page 2](zotero://open-pdf/library/items/6GBATL98?page=2&annotation=BF82QTG4) ^BF82QTG4
 >![[assets/The Linear Representation Hypothesis and the Geometry of Large Language Models/zotero-image-2-x47-y505.png]]
-
-^18e1a6
 
 
