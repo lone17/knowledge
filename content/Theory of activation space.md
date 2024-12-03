@@ -1,7 +1,7 @@
 ---
 aliases: 
 tags:
-  - cs/ai/ml/mechanistic-intepretation
+  - cs/ai/ml/mechanistic-interpretability
   - cs/ai/ml/theory
   - "#idea/research"
 created: 2024-11-05 12:02 PM +07:00

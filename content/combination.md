@@ -1,4 +1,6 @@
 ---
+aliases: 
+tags: 
 modified: 2024-02-17 05:50 AM +07:00
 created: 2024-02-16 22:17 PM +07:00
 ---

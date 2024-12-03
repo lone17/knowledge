@@ -1,8 +1,8 @@
 ---
 aliases: 
-modified: 2024-12-01 16:40 PM +07:00
+modified: 2024-12-03 22:41 PM +07:00
 tags:
-  - cs/ai/ml/mechanistic-intepretation
+  - cs/ai/ml/mechanistic-interpretability
   - "#cs/ai/ml/nlp/llm"
 created: 2024-10-24 14:57 PM +07:00
 ---
@@ -105,7 +105,22 @@ created: 2024-10-24 14:57 PM +07:00
   ![[Qwen-1-8B-chat_pos-1_newline.png]]
 ## Interpreting the refusal direction
 - does it represent the refusal behaviour or harmfulness or both ? #question
-	- how to 
+## vector arithmetic or rotation ?
+- Does only the direction matter or the magnitude as well ?
+	- recent works seems to consider both
+		- [[Refusal in Language Models Is Mediated by a Single Direction]]
+		- [[A Language Model's Guide Through Latent Space]]
+		- [[Steering Language Models With Activation Engineering]]
+	- they operate on the pre-normed activation
+- But modern LLMs use RMSNorm ![[The effect of BatchNorm vs LayerNorm vs RMSNorm#^53c1d6]]
+	- So the magnitude will aways be normalized before going into a MLP or Attention layer
+- My hypothesis is: the feature varies its effect from a rotation on a 2D plane (could be higher dimension) around the complemented n-2 dimensional subspace #hypothesis
+	- The magnitude, while matters for raw activations, is not important for varying the effect of a feature
+	- Scaling the magnitude is just a proxy for rotating the direction, and it can only mimic half of the rotation
+	- The directional magnitude of a feature in the raw activations is for competing with other features in superposition and reducing the interference of other features
+
+### observations so far
+- 
 # on activation engineering and parameter engineering
 - the idea of activation control seems similar to control net in diffusion models
 - combining [[LoRA]]s in diffusion models work quite well but model merging in LLMs is not as good

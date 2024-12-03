@@ -1,7 +1,7 @@
 ---
 aliases: 
 tags: 
-modified: 2024-09-23 14:41 PM +07:00
+modified: 2024-12-04 01:02 AM +07:00
 created: 2024-07-07 12:43 PM +07:00
 ---
 #cs/data-structure #cs/algo/string
@@ -25,7 +25,7 @@ Time: $O(n + m + z)$
 # usage
 - Great for cases where the **patterns are fixed** and the **target text changes**.
 # implementation
-```python
+```python title="Aho-Corasick" 
 from typing import List
 
 class AhoCorasick:

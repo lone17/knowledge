@@ -2,7 +2,8 @@
 aliases: 
 tags: 
 created: 2024-07-22 13:31 PM +07:00
-modified: 2024-11-29 22:24 PM +07:00
+modified: 2024-12-03 23:47 PM +07:00
+meta: true
 ---
 ## Highlighting colour codes
 - <mark style="background: #FFF3A3A6;">Note (yellow)</mark>: highlights for quicker reading or comments stemmed from reading the paper but might not be too related to the paper
