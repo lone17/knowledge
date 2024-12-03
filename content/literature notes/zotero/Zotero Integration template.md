@@ -3,7 +3,7 @@ aliases:
   - "@{{citekey}}"
 tags:
   - integration/zotero
-modified: 2024-12-04 02:19 AM +07:00
+modified: 2024-12-04 02:35 AM +07:00
 created: 2024-07-23 16:20 PM +07:00
 ---
 > [!Cite]
@@ -76,12 +76,12 @@ created: 2024-07-23 16:20 PM +07:00
 {{highlightType(annot)}} | {{viewInZotero(annot)}} 
 {%- else -%}
 {{annot.type | capitalize}} | {{viewInZotero(annot)}}
-{%- endif %} ^{{annot.id | lower}}
+{%- endif %}
 {% if annot.annotatedText -%}
 >“{{annot.annotatedText}}”
 {%- elif annot.imageRelativePath -%}
 >![[{{annot.imageRelativePath}}]]
-{%- endif %}
+{%- endif %} ^{{annot.id | lower}}
 {% if annot.comment %}>>{{annot.comment}}{% endif %}
 
 {% endfor -%}

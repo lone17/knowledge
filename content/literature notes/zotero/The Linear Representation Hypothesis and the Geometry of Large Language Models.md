@@ -3,7 +3,7 @@ aliases:
   - "@park2024"
 tags:
   - integration/zotero
-modified: 2024-12-04 02:20 AM +07:00
+modified: 2024-12-04 02:35 AM +07:00
 created: 2024-07-23 16:20 PM +07:00
 ---
 > [!Cite]
@@ -32,7 +32,7 @@ created: 2024-07-23 16:20 PM +07:00
 ## From Zotero
 **Imported: 2024-12-04**^e0c377
 
->[!quote] <mark style="background: #FFF3A3A6;">Note</mark> | [View in local Zotero: page 2](zotero://open-pdf/library/items/6GBATL98?page=2&annotation=BF82QTG4) ^bf82qtg4
->![[assets/The Linear Representation Hypothesis and the Geometry of Large Language Models/zotero-image-2-x47-y505.png]]
+>[!quote] <mark style="background: #FFF3A3A6;">Note</mark> | [View in local Zotero: page 2](zotero://open-pdf/library/items/6GBATL98?page=2&annotation=BF82QTG4)
+>![[assets/The Linear Representation Hypothesis and the Geometry of Large Language Models/zotero-image-2-x47-y505.png]] ^bf82qtg4
 
 
