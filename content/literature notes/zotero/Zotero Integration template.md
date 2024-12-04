@@ -3,7 +3,7 @@ aliases:
   - "@{{citekey}}"
 tags:
   - integration/zotero
-modified: 2024-12-04 02:35 AM +07:00
+modified: 2024-12-04 14:08 PM +07:00
 created: 2024-07-23 16:20 PM +07:00
 ---
 > [!Cite]
@@ -25,7 +25,11 @@ created: 2024-07-23 16:20 PM +07:00
 > {{abstractNote}}
 
 # Notes
+## From Obsidian
+_(As notes and annotations from Zotero are one-way synced, this section include a link to another note within Obsidian to host further notes)_
+![[literature notes/papers/{{title.replace(":", " -")}}]]
 ## From Zotero
+_(one-way sync from Zotero)_
 {% if notes and notes.length > 0 -%}
 **Imported: {{importDate | format("YYYY-MM-DD")}}**
 
@@ -39,11 +43,10 @@ created: 2024-07-23 16:20 PM +07:00
 
 {% endfor -%}
 {%- endif %}
-## From Obsidian
-![[literature notes/papers/{{title.replace(":", " -")}}]]
 # Annotations
 ![[Highlight Colour Codings#Highlighting colour codes]]
 ## From Zotero
+_(one-way sync from Zotero)_
 {%- if annotations and annotations.length > 0 -%}
 {%- set annotations = annotations | filterby("date", "dateafter", lastExportDate) -%}
 

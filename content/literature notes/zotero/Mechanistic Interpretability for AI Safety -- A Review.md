@@ -3,7 +3,7 @@ aliases:
   - "@bereska2024"
 tags:
   - integration/zotero
-modified: 2024-12-04 02:35 AM +07:00
+modified: 2024-12-04 14:19 PM +07:00
 created: 2024-07-23 16:20 PM +07:00
 ---
 > [!Cite]
@@ -23,13 +23,16 @@ created: 2024-07-23 16:20 PM +07:00
 > Understanding AI systems' inner workings is critical for ensuring value alignment and safety. This review explores mechanistic interpretability: reverse-engineering the computational mechanisms and representations learned by neural networks into human-understandable algorithms and concepts to provide a granular, causal understanding. We establish foundational concepts such as features encoding knowledge within neural activations and hypotheses about their representation and computation. We survey methodologies for causally dissecting model behaviors and assess the relevance of mechanistic interpretability to AI safety. We investigate challenges surrounding scalability, automation, and comprehensive interpretation. We advocate for clarifying concepts, setting standards, and scaling techniques to handle complex models and behaviors and expand to domains such as vision and reinforcement learning. Mechanistic interpretability could help prevent catastrophic outcomes as AI systems become more powerful and inscrutable.
 
 # Notes
-## From Zotero
-
 ## From Obsidian
+_(As notes and annotations from Zotero are one-way synced, this section include a link to another note within Obsidian to host further notes)_
 ![[literature notes/papers/Mechanistic Interpretability for AI Safety -- A Review]]
+## From Zotero
+_(one-way sync from Zotero)_
+
 # Annotations
 ![[Highlight Colour Codings#Highlighting colour codes]]
 ## From Zotero
+_(one-way sync from Zotero)_
 **Imported: 2024-12-04**^e0c377
 
 >[!quote] <mark style="background: #FFF3A3A6;">Note</mark> | [View in local Zotero: page 1](zotero://open-pdf/library/items/MGFTCTVY?page=1&annotation=29LZ2RML)
@@ -62,6 +65,10 @@ created: 2024-07-23 16:20 PM +07:00
 
 >[!quote] <mark style="background: #D2B3FFA6;">Important</mark> | [View in local Zotero: page 4](zotero://open-pdf/library/items/MGFTCTVY?page=4&annotation=I4HVC47B)
 >“Non-orthogonality means that features interfere with one another.” ^i4hvc47b
+
+
+>[!quote] <mark style="background: #FFF3A3A6;">Note</mark> | [View in local Zotero: page 5](zotero://open-pdf/library/items/MGFTCTVY?page=5&annotation=25C9RZKL)
+>![[assets/Mechanistic Interpretability for AI Safety -- A Review/zotero-image-5-x80-y164.png]] ^25c9rzkl
 
 
 >[!quote] <mark style="background: #FFF3A3A6;">Note</mark> | [View in local Zotero: page 6](zotero://open-pdf/library/items/MGFTCTVY?page=6&annotation=DDAM3EFV)
