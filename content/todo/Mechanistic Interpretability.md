@@ -7,7 +7,7 @@ tags:
   - cs/ai/ml/modular-learning
   - cs/ai/ml/mechanistic-interpretability
 created: 2024-10-24 15:23 PM +07:00
-modified: 2024-12-04 16:46 PM +07:00
+modified: 2024-12-04 17:12 PM +07:00
 ---
 > This is the master note for Mechanistic Interpretability
 
@@ -28,8 +28,7 @@ modified: 2024-12-04 16:46 PM +07:00
 - **Neurons** [^1]
 	- are *computational units*
 	- potentially representing individual **features**
-	- for
-	-   ming **privileged bases**
+	- forming **privileged bases**
 - **Circuit**
 	- sub-graphs of the network, consisting of features and the weights connecting them
 - **monosemantic and polysemantic neurons**
@@ -76,7 +75,7 @@ modified: 2024-12-04 16:46 PM +07:00
 - **Decomposability**: Neural network activations which are decomposable can be decomposed into features, the meaning of which is not dependent on the value of other features.
 - **Linearity**: Features correspond to directions. Each feature $f_i$​ has a corresponding representation direction $W_i$. The presence of multiple features $f_1,f_2…$ activating with values $x_{f_1},x_{f_2}…$ is represented by $x_{f_1}W_{f_1} + x{f_2}W{f_2} \cdots$
 - **Superposition vs Non-Superposition**: A linear representation exhibits superposition if $WW^T$ is not invertible. If $WW^T$ is invertible, it does not exhibit superposition.
-- *Basis-Aligned*: A representation is basis aligned if all $W_i$​ are one-hot basis vectors. A representation is partially basis aligned if all $W_i$ are sparse. This requires a privileged basis.
+- **Basis-Aligned**: A representation is basis aligned if all $W_i$​ are one-hot basis vectors. A representation is partially basis aligned if all $W_i$ are sparse. This requires a privileged basis.
 
 The first two are hypothesized to be widespread, while the latter are believed to be occured only sometimes.
 

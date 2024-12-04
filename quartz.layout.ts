@@ -47,12 +47,14 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.RecentNotes({
-      title: "Recently Updated",
-      limit: 5,
-      showTags: true,
-      sort: byFrontMatterModifiedDateThenTitle(),
-    }),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Recently Updated",
+        limit: 5,
+        showTags: false,
+        sort: byFrontMatterModifiedDateThenTitle(),
+      }),
+    ),
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
@@ -72,5 +74,12 @@ export const defaultListPageLayout: PageLayout = {
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
   ],
-  right: [],
+  right: [
+    Component.RecentNotes({
+      title: "Recently Updated",
+      limit: 5,
+      showTags: true,
+      sort: byFrontMatterModifiedDateThenTitle(),
+    }),
+  ],
 }
