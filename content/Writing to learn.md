@@ -1,7 +1,7 @@
 ---
 aliases: 
 tags: 
-modified: 2024-12-05 14:05 PM +07:00
+modified: 2024-12-05 14:10 PM +07:00
 created: 2024-03-01 03:54 AM +07:00
 ---
 #advice 
