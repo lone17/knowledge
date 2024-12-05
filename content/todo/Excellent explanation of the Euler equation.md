@@ -1,5 +1,7 @@
 ---
-modified: 2024-05-07 03:21 AM +07:00
+aliases: 
+tags: 
+modified: 2024-12-05 14:10 PM +07:00
 created: 2024-02-05 21:19 PM +07:00
 ---
 #maths #todo/write

@@ -1,7 +1,7 @@
 ---
 aliases: 
 tags: 
-modified: 2024-12-05 14:03 PM +07:00
+modified: 2024-12-05 14:04 PM +07:00
 created: 2024-01-31 01:14 AM +07:00
 ---
 #thought #advice
