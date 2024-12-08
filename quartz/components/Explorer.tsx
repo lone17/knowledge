@@ -1,12 +1,12 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import explorerStyle from "./styles/explorer.scss"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 // @ts-ignore
-import script from "./scripts/explorer.inline"
-import { ExplorerNode, FileNode, Options } from "./ExplorerNode"
+import { i18n } from "../i18n"
 import { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
-import { i18n } from "../i18n"
+import { ExplorerNode, FileNode, Options } from "./ExplorerNode"
+import script from "./scripts/explorer.inline"
 
 // Options interface defined in `ExplorerNode` to avoid circular dependency
 const defaultOptions = {
@@ -112,7 +112,7 @@ export default ((userOpts?: Partial<Options>) => {
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
         </button>
-        <div id="explorer-content">
+        <div id="explorer-content" class="collapsed">
           <ul class="overflow" id="explorer-ul">
             <ExplorerNode node={fileTree} opts={opts} fileData={fileData} />
             <li id="explorer-end" />
