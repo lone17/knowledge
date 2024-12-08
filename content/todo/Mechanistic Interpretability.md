@@ -7,7 +7,7 @@ tags:
   - cs/ai/ml/modular-learning
   - cs/ai/ml/mechanistic-interpretability
 created: 2024-10-24 15:23 PM +07:00
-modified: 2024-12-04 17:12 PM +07:00
+modified: 2024-12-08 10:09 AM +07:00
 ---
 > This is the master note for Mechanistic Interpretability
 
@@ -49,7 +49,6 @@ modified: 2024-12-04 17:12 PM +07:00
 - **Features** / concepts are represented by orthogonal directions in activation space
 	- but need not be aligned with the **privileged bases**
 - The network represents **features** as linear combinations of neurons
-- Non-orthognality means that **features** interfere with one another
    ![[The Linear Representation Hypothesis and the Geometry of Large Language Models#^bf82qtg4]]
 ---
 ## Superposition Hypothesis
@@ -157,9 +156,9 @@ $$
 
 ---
 - MLP layers are Unnormalized Key-Value Memories
-	- MLP layers [^6]
+	- MLP layers [^6] :
 	  $$FF(x) = f(x \cdot K^T) \cdot V$$
-	- [[Neural Memory]] [^7]
+	- [[Neural Memory]] [^7] :
 	  $$
 	  \begin{align}
 	  p(k_i|x) &\propto exp(x \cdot k_i) \\\\
@@ -177,7 +176,7 @@ $$
 	![[Transformer Feed-Forward Layers Are Key-Value Memories#^vtp822lj]]
 ---
 # my observations, hypothesis and findings
--  [[Theory of activation space]]
+- [[Theory of activation space]]
 - [[The effects of neural net layers on activation space]]
 # literature
 ## papers
