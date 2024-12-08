@@ -55,7 +55,11 @@ export const defaultContentPageLayout: PageLayout = {
         sort: byFrontMatterModifiedDateThenTitle(),
       }),
     ),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(
+      Component.Explorer({
+        title: "All notes",
+      }),
+    ),
   ],
   right: [
     Component.Graph(),
