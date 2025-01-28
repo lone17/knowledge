@@ -1,16 +1,16 @@
 ---
 aliases: 
-modified: 2024-12-03 22:41 PM +07:00
+modified: 2025-01-28 23:44 +07:00
 tags:
   - cs/ai/ml/mechanistic-interpretability
   - "#cs/ai/ml/nlp/llm"
-created: 2024-10-24 14:57 PM +07:00
+created: 2024-10-24 14:57 +07:00
 ---
 # Control Vectors vs Prompting
 - Prompting steer the generation by adding more distracting tokens to "overwhelms" the activation space.
 - Control vectors in the other hand alter the activation space directly, thus potentially be more effective and harder to be undone.
 
-# on ablating refusal direction[^1]
+# on controlling refusal behaviour[^1]
 ## single refusal direction are applicable across layers
 - ablation can be applied anywhere and need not to be applied on the layer where it was extracted to have an effect #observation
 	- this suggests that activations from all layers are on the same space #hypothesis
@@ -91,8 +91,9 @@ created: 2024-10-24 14:57 PM +07:00
 	- Qwen models tend to include Chinese response after the English one, could this tell us anything about the data that the models were trained on ? #question
 - it's harder to find a good refusal direction for LLama3.2 compared to Qwen1 and Qwen2.5. Many times the model after ablated would refuse the request in a different way (e.g. `As  an AI  model ...` to `I can't help you with that request ...`)
 	- this might suggest that Llama3.2 was trained/fine-tuned with multiple round of alignment #hypothesis 
-	- apply more than 1 time the process of extracting and ablating refusal direction my elevate this. If that works then it means there could be multiple refusal direction representing different behaviours and can be ablated one by one #idea
+	- apply more than 1 time the process of extracting and ablating refusal direction may elevate this. If that works then it means there could be multiple refusal direction representing different behaviours and can be ablated one by one #idea
 - given a refusal direction, how to vary its effect ? #question
+	- see [[Control LLM generation#vector arithmetic or rotation ?]]
 ## the use of chat template seems to be important
 - chat template makes it easier to choose the token position to extract the direction
 	- the few last tokens which is the suffix of the template after the main content was used
@@ -103,8 +104,10 @@ created: 2024-10-24 14:57 PM +07:00
 - this might suggest that instruction fine-tuning introduces behaviour vectors to the model #hypothesis
 - but by just adding a newline character at the end, it will have a not as good but similar effect to using a template
   ![[Qwen-1-8B-chat_pos-1_newline.png]]
+## How to find the refusal direction ?
 ## Interpreting the refusal direction
 - does it represent the refusal behaviour or harmfulness or both ? #question
+  ![[Refusal behaviour can be controlled by turning a knob#Thoughts]]
 ## vector arithmetic or rotation ?
 - Does only the direction matter or the magnitude as well ?
 	- recent works seems to consider both
@@ -118,9 +121,38 @@ created: 2024-10-24 14:57 PM +07:00
 	- The magnitude, while matters for raw activations, is not important for varying the effect of a feature
 	- Scaling the magnitude is just a proxy for rotating the direction, and it can only mimic half of the rotation
 	- The directional magnitude of a feature in the raw activations is for competing with other features in superposition and reducing the interference of other features
-
-### observations so far
-- 
+### experiments
+Find a 2D subspace that the refusal direction resigns and rotate the activation along that space
+- How to find the 2D space ?
+	- From each layer, extract a candidate for the refusal direction
+	- Pick the best candidate amongst those (see [[Control LLM generation#How to find the refusal direction ?]]) to use as the first vector (will trying taking the mean of all candidates later #todo/experiment )
+	- Fit a PCA on the candidates and take the 1st PC to be the second vector
+	- Now we have 2 vectors to make a 2d space
+	- The idea is
+		- since these candidates are extracted from different layers, they would all overlap with the true refusal direction
+		- but the level of overlapping would vary
+		- thus we want a space that when project these candidates onto
+			- maximize their spread
+			- maximize the scalar projections
+	- A different approach that didn't work:
+		- Take the last 2 PC
+		- the idea was that these candidates all have high overlap with the true direction, so we want to find a projection that minimize the spread but maximize the scalar projections
+			- but this seems to be incorrect since the candidates are extracted from different layers and the strength of the refusal direction might be accumulated as it follows through more layers
+			- this might still works if we narrow down to only select candidates from a subset of middle layers where the refusal signal is strongest #todo/experiment 
+			- another problem is the number of candidates (number of layers) are much smaller than the number of dimension (the hidden size)
+				- thus most principal components are just orthogonal spaces
+				- should try extracting more candidates from each layer, for example treating each input sample as a candidate instead of taking the mean of them #todo/experiment 
+					- however this should take significantly more memory and computation
+- How to rotate the activation along that space ?
+	- rotate each activation by the same amount
+		- see [[Rotate from one vector to another vector in high dimensional space]]
+		- this might not be very effective as activation from different input would need different amount of rotation, some don't need any (harmless inputs)
+	- rotate each activation to the same angle
+		- this might affect the generation on harmless inputs as they will also be rotated
+			- but the effect should be minimal
+			- we can even avoid this by using a gating mask with the price of a bit more computation
+- Results: 
+  ![[Refusal behaviour can be controlled by turning a knob#Observations]]
 # on activation engineering and parameter engineering
 - the idea of activation control seems similar to control net in diffusion models
 - combining [[LoRA]]s in diffusion models work quite well but model merging in LLMs is not as good

@@ -4,7 +4,7 @@ aliases:
 tags:
   - integration/zotero
 modified: 2024-12-04 14:19 PM +07:00
-created: 2024-07-23 16:20 PM +07:00
+created: 2024-07-23 16:20 +07:00
 ---
 > [!Cite]
 > Bereska, Leonard, and Efstratios Gavves. _Mechanistic Interpretability for AI Safety -- A Review_. 1, arXiv:2404.14082, arXiv, 22 Apr. 2024. _arXiv.org_, [https://doi.org/10.48550/arXiv.2404.14082](https://doi.org/10.48550/arXiv.2404.14082).

@@ -2,7 +2,7 @@
 aliases: 
 tags: 
 modified: 2024-10-09 16:06 PM +07:00
-created: 2024-06-28 05:36 AM +07:00
+created: 2024-06-28 05:36 +07:00
 ---
 #idea/research #cs/ai/ml 
 # what

@@ -4,7 +4,7 @@ tags:
   - cs/ai/ml/mechanistic-interpretability
   - "#thought"
   - cs/ai/ml/theory
-created: 2024-10-29 17:08 PM +07:00
+created: 2024-10-29 17:08 +07:00
 modified: 2024-12-04 01:26 AM +07:00
 ---
 # consecutive matrix transformations are series of change of basis in activation space

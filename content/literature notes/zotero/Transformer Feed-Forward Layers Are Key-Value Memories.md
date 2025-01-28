@@ -4,7 +4,7 @@ aliases:
 tags:
   - integration/zotero
 modified: 2024-12-04 14:08 PM +07:00
-created: 2024-07-23 16:20 PM +07:00
+created: 2024-07-23 16:20 +07:00
 ---
 > [!Cite]
 > Geva, Mor, et al. _Transformer Feed-Forward Layers Are Key-Value Memories_. arXiv:2012.14913, arXiv, 5 Sept. 2021. _arXiv.org_, [http://arxiv.org/abs/2012.14913](http://arxiv.org/abs/2012.14913).

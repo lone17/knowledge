@@ -4,7 +4,7 @@ aliases:
 tags:
   - integration/zotero
 modified: 2024-12-04 14:08 PM +07:00
-created: 2024-07-23 16:20 PM +07:00
+created: 2024-07-23 16:20 +07:00
 ---
 > [!Cite]
 > Arditi, Andy, et al. _Refusal in Language Models Is Mediated by a Single Direction_. arXiv:2406.11717, arXiv, 30 Oct. 2024. _arXiv.org_, [https://doi.org/10.48550/arXiv.2406.11717](https://doi.org/10.48550/arXiv.2406.11717).
