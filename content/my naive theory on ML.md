@@ -1,8 +1,8 @@
 ---
 aliases: 
 tags: 
-modified: 2024-11-29 22:54 PM +07:00
-created: 2024-09-29 10:39 AM +07:00
+modified: 2025-01-28 21:38 +07:00
+created: 2024-09-29 10:39 +07:00
 ---
 #thought  
 

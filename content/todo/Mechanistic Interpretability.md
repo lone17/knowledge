@@ -6,8 +6,8 @@ tags:
   - cs/ai/ml/nlp/llm
   - cs/ai/ml/modular-learning
   - cs/ai/ml/mechanistic-interpretability
-created: 2024-10-24 15:23 PM +07:00
-modified: 2025-01-25 21:01 PM +07:00
+created: 2024-10-24 15:23 +07:00
+modified: 2025-01-28 21:39 +07:00
 ---
 > This is the master note for Mechanistic Interpretability
 

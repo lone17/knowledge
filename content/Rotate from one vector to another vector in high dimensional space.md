@@ -1,8 +1,8 @@
 ---
 aliases: 
 tags: 
-modified: 2025-01-28 03:36 AM +07:00
-created: 2024-11-28 17:31 PM +07:00
+modified: 2025-01-28 21:38 +07:00
+created: 2024-11-28 17:31 +07:00
 ---
 #maths/algebra 
 
@@ -87,3 +87,4 @@ R = np.eye(n) - (np.outer(u, u) + np.outer(v, v)) + uv @ R_theta @ uv.T
 ```
 # References
 - [linear algebra - Finding the rotation matrix in n-dimensions - Mathematics Stack Exchange](https://math.stackexchange.com/questions/598750/finding-the-rotation-matrix-in-n-dimensions)
+
