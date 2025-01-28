@@ -7,7 +7,7 @@ tags:
   - cs/ai/ml/modular-learning
   - cs/ai/ml/mechanistic-interpretability
 created: 2024-10-24 15:23 PM +07:00
-modified: 2024-12-08 10:09 AM +07:00
+modified: 2025-01-25 21:01 PM +07:00
 ---
 > This is the master note for Mechanistic Interpretability
 
@@ -175,24 +175,25 @@ $$
 	- ![[Transformer Feed-Forward Layers Are Key-Value Memories#^lx5tnw3j]]
 	![[Transformer Feed-Forward Layers Are Key-Value Memories#^vtp822lj]]
 ---
-# my observations, hypothesis and findings
+# my observations, hypotheses and findings
 - [[Theory of activation space]]
 - [[The effects of neural net layers on activation space]]
 # literature
 ## papers
+#todo/study 
 - [[Refusal in Language Models Is Mediated by a Single Direction]]
-- [[Toy Models of Superposition]]
 - [[The Linear Representation Hypothesis and the Geometry of Large Language Models]]
-- [[Representation Engineering: A Top-Down Approach to AI Transparency]]
+- [[Representation Engineering - A Top-Down Approach to AI Transparency]]
 - [[Steering Language Models With Activation Engineering]]
 - [[A Language Model's Guide Through Latent Space]]
 - [[Linear Representations of Sentiment in Large Language Models]]
 - [[Universal and Transferable Adversarial Attacks on Aligned Language Models]]
 - [[Transformer Feed-Forward Layers Are Key-Value Memories]]
 - [[Mechanistic Interpretability for AI Safety -- A Review]]
-- [[A Mathematical Framework for Transformer Circuits]]
 ## articles
 #todo/study 
+- [[A Mathematical Framework for Transformer Circuits]]
+- [[Toy Models of Superposition]]
 - [Towards Monosemanticity: Decomposing Language Models With Dictionary Learning](https://transformer-circuits.pub/2023/monosemantic-features) 
 - [Transformer Circuits Thread](https://transformer-circuits.pub)
 - [Thread: Circuits](https://distill.pub/2020/circuits/)

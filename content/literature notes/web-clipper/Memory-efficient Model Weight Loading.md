@@ -7,7 +7,7 @@ published:
 created: 2024-11-14 00:00 AM +07:00
 description: 
 tags: 
-modified: 2024-12-01 16:22 PM +07:00
+modified: 2024-12-10 12:53 PM +07:00
 ---
 
 [Jupyter Notebook](https://github.com/rasbt/LLMs-from-scratch/raw/refs/heads/main/ch05/08_memory_efficient_weight_loading/memory-efficient-state-dict.ipynb)
