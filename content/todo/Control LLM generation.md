@@ -1,6 +1,6 @@
 ---
 aliases: 
-modified: 2025-01-28 23:44 +07:00
+modified: 2025-01-29 04:07 +07:00
 tags:
   - cs/ai/ml/mechanistic-interpretability
   - "#cs/ai/ml/nlp/llm"
@@ -138,7 +138,7 @@ Find a 2D subspace that the refusal direction resigns and rotate the activation 
 		- Take the last 2 PC
 		- the idea was that these candidates all have high overlap with the true direction, so we want to find a projection that minimize the spread but maximize the scalar projections
 			- but this seems to be incorrect since the candidates are extracted from different layers and the strength of the refusal direction might be accumulated as it follows through more layers
-			- this might still works if we narrow down to only select candidates from a subset of middle layers where the refusal signal is strongest #todo/experiment 
+			- this might still work if we narrow down to only select candidates from a subset of middle layers where the refusal signal is strongest #todo/experiment 
 			- another problem is the number of candidates (number of layers) are much smaller than the number of dimension (the hidden size)
 				- thus most principal components are just orthogonal spaces
 				- should try extracting more candidates from each layer, for example treating each input sample as a candidate instead of taking the mean of them #todo/experiment 
