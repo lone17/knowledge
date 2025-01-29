@@ -1,6 +1,6 @@
 ---
 aliases: 
-modified: 2025-01-29 04:07 +07:00
+modified: 2025-01-30 05:11 +07:00
 tags:
   - cs/ai/ml/mechanistic-interpretability
   - "#cs/ai/ml/nlp/llm"
@@ -122,37 +122,7 @@ created: 2024-10-24 14:57 +07:00
 	- Scaling the magnitude is just a proxy for rotating the direction, and it can only mimic half of the rotation
 	- The directional magnitude of a feature in the raw activations is for competing with other features in superposition and reducing the interference of other features
 ### experiments
-Find a 2D subspace that the refusal direction resigns and rotate the activation along that space
-- How to find the 2D space ?
-	- From each layer, extract a candidate for the refusal direction
-	- Pick the best candidate amongst those (see [[Control LLM generation#How to find the refusal direction ?]]) to use as the first vector (will trying taking the mean of all candidates later #todo/experiment )
-	- Fit a PCA on the candidates and take the 1st PC to be the second vector
-	- Now we have 2 vectors to make a 2d space
-	- The idea is
-		- since these candidates are extracted from different layers, they would all overlap with the true refusal direction
-		- but the level of overlapping would vary
-		- thus we want a space that when project these candidates onto
-			- maximize their spread
-			- maximize the scalar projections
-	- A different approach that didn't work:
-		- Take the last 2 PC
-		- the idea was that these candidates all have high overlap with the true direction, so we want to find a projection that minimize the spread but maximize the scalar projections
-			- but this seems to be incorrect since the candidates are extracted from different layers and the strength of the refusal direction might be accumulated as it follows through more layers
-			- this might still work if we narrow down to only select candidates from a subset of middle layers where the refusal signal is strongest #todo/experiment 
-			- another problem is the number of candidates (number of layers) are much smaller than the number of dimension (the hidden size)
-				- thus most principal components are just orthogonal spaces
-				- should try extracting more candidates from each layer, for example treating each input sample as a candidate instead of taking the mean of them #todo/experiment 
-					- however this should take significantly more memory and computation
-- How to rotate the activation along that space ?
-	- rotate each activation by the same amount
-		- see [[Rotate from one vector to another vector in high dimensional space]]
-		- this might not be very effective as activation from different input would need different amount of rotation, some don't need any (harmless inputs)
-	- rotate each activation to the same angle
-		- this might affect the generation on harmless inputs as they will also be rotated
-			- but the effect should be minimal
-			- we can even avoid this by using a gating mask with the price of a bit more computation
-- Results: 
-  ![[Refusal behaviour can be controlled by turning a knob#Observations]]
+- [[Refusal behaviour can be controlled by turning a knob]]
 # on activation engineering and parameter engineering
 - the idea of activation control seems similar to control net in diffusion models
 - combining [[LoRA]]s in diffusion models work quite well but model merging in LLMs is not as good
