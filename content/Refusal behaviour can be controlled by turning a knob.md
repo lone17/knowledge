@@ -2,10 +2,15 @@
 aliases: 
 tags: 
 created: 2025-01-28 20:16 +07:00
-modified: 2025-01-30 05:09 +07:00
+modified: 2025-02-10 13:18 +07:00
 ---
 #cs/ai/ml/nlp/llm #cs/ai/ml/mechanistic-interpretability 
 
+# Contributions
+- A *better framework* for extracting *refusal direction* using statistical methods instead of downstream evaluation
+	- Point out that *vector addition* and *vector ablation* are both special cases of *vector rotation*
+	- Show that both of them have limitations
+	  
 # Experiments
 ## Idea
 Find a 2D subspace that the refusal direction resigns and rotate the activation along that space
@@ -34,7 +39,7 @@ Find a 2D subspace that the refusal direction resigns and rotate the activation 
 		- see [[Rotate from one vector to another vector in high dimensional space]]
 		- this might not be very effective as activation from different input would need different amount of rotation, some don't need any (harmless inputs)
 	- rotate each activation to the same angle
-		- see [[Rotate any vector to a fixed angle in high dimensional space]] for an efficient method
+		- see [[Rotate any vector to a target angle in high dimensional space]] for an efficient method
 		- this might affect the generation on harmless inputs as they will also be rotated
 			- but the effect should be minimal
 			- we can even avoid this by using a gating mask with the price of a bit more computation
