@@ -1,4 +1,4 @@
-import explorerStyle from "./styles/explorer.scss"
+import style from "./styles/explorer.scss"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 // @ts-ignore
