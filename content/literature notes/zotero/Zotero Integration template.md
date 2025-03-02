@@ -3,8 +3,8 @@ aliases:
   - "@{{citekey}}"
 tags:
   - integration/zotero
-modified: 2024-12-04 14:08 PM +07:00
-created: 2024-07-23 16:20 PM +07:00
+modified: 2025-02-12 00:33 +07:00
+created: 2024-07-23 16:20 +07:00
 ---
 > [!Cite]
 > {{bibliography}}

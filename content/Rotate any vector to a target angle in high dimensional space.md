@@ -1,7 +1,7 @@
 ---
 aliases: 
 tags: 
-modified: 2025-02-10 13:18 +07:00
+modified: 2025-02-16 02:24 +07:00
 created: 2025-01-30 03:28 +07:00
 ---
 #maths/algebra 
@@ -12,9 +12,9 @@ In an n-dimensional, given a 2D subspace $P$ and a target direction (unit vector
 # Idea
 ## Naive approach
 A naive approach would be to [[Rotate any vector to a target angle in high dimensional space]], which involves the following steps:
-1. Project $v$ onto the $\mathbb{R}^2$ mapping of $P$ to get $proj^x_P$
-2. Find the angle $\theta$ between $proj^x_P$ and $d$
-3. Calculate the rotation matrix  $R$ using ![[Rotate from one vector to another vector in high dimensional space#^e160cf]]
+1. Project $v$ onto the $\mathbb{R}^2$ mapping of $P$ to get $proj_P(x)$
+2. Find the angle $\theta$ between $proj_P(x)$ and $d$
+3. Compute the rotation matrix  $R$ using ![[Rotate from one vector to another vector in high dimensional space#^e160cf]]
 4. Apply $R$ on $v$
 
 Each of these steps will involve 1 matrix multiplication, except for step 3 (if using eq. (2) with precomputed values), resulting in 3 matrix multiplications in total. This is not efficient and we can do better.
@@ -25,19 +25,19 @@ Looking at eq. (1) from above, $[u \; v] \, R_\theta \,[u \; v]^T$ computes the 
 - do the rotation by $\theta$
 - then map back up
 
-Since this transformation preserves the norm, we can instead precompute this for the unit vector, then scale the result by $|proj^x_P|$.
+Since this transformation preserves the norm, we can instead precompute this for the unit vector, then scale the result by $|proj_P(x)|$.
 
 Thus, the transformation becomes:
 $$
 \begin{align}
-proj^x_P  &= (uu^T + vv^T) \cdot x \\
+proj_P(x)  &= (uu^T + vv^T) \cdot x \\
 \\
-R \cdot x &= x - proj^x_P + |proj^x_P| \cdot [u\;v] \; R_{\theta + \theta_x} \; [1\;0]^T
+R \cdot x &= x - proj_P(x) + |proj_P(x)| \cdot [u\;v] \; R_{\theta + \theta_x} \; [1\;0]^T
 \end{align}
 $$
-with $\theta_x$ be the angle between $proj^x_P$ and the unit vector $[1 \; 0]$.
+with $\theta_x$ be the angle between $proj_P(x)$ and the unit vector $[1 \; 0]$.
 
-As the result, only one matrix multiplication is needed to compute $proj^x_P$, other multiplications can be precomputed.
+As the result, only one matrix multiplication is needed to compute $proj_P(x)$, other multiplications can be precomputed.
 # Implementation
 ```python
 def rotate_to_target(x, target_degree, basis1, basis2):      

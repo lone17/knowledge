@@ -7,7 +7,7 @@ tags:
   - cs/ai/ml/modular-learning
   - cs/ai/ml/mechanistic-interpretability
 created: 2024-10-24 15:23 +07:00
-modified: 2025-01-28 21:39 +07:00
+modified: 2025-03-03 03:21 +07:00
 ---
 > This is the master note for Mechanistic Interpretability
 
@@ -144,7 +144,7 @@ $$
 - An attention head is really applying two linear operations, $A$ and $W_O W_V$​, which operate on different dimensions and act independently.
 	- $A$ governs which token's information is moved from and to.
 	- $W_O W_V$​ governs which information is read from the source token and how it is written to the destination token.
-![[assets/The effects of neural net layers on activation space/attachment_2.jpg|600]]
+![[self-attention-visualization.jpg|600]]
 - Products of attention heads behave much like attention heads themselves. By the distributive property
 $$
 (A^{h_2} \otimes W^{h_2}_{OV} \cdot A^{h_1} \otimes W^{h_1}_{OV} = (A^{h_2}A^{h_1}) \otimes (W^{h_2}_{OV} W^{h_1}_{OV}))

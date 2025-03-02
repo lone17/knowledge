@@ -3,8 +3,8 @@ aliases:
   - "@zou2023a"
 tags:
   - integration/zotero
-modified: 2024-12-04 14:08 PM +07:00
-created: 2024-07-23 16:20 PM +07:00
+modified: 2025-02-12 02:32 +07:00
+created: 2024-07-23 16:20 +07:00
 ---
 > [!Cite]
 > Zou, Andy, et al. _Universal and Transferable Adversarial Attacks on Aligned Language Models_. arXiv:2307.15043, arXiv, 20 Dec. 2023. _arXiv.org_, [http://arxiv.org/abs/2307.15043](http://arxiv.org/abs/2307.15043).

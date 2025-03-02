@@ -5,7 +5,7 @@ tags:
   - "#thought"
   - cs/ai/ml/theory
 created: 2024-10-29 17:08 +07:00
-modified: 2024-12-04 01:26 AM +07:00
+modified: 2025-03-03 03:49 +07:00
 ---
 # consecutive matrix transformations are series of change of basis in activation space
 - initial vector space with basis `{python} [1, 0], [0, 1]`, the yellow region indicates ReLU operation
@@ -28,7 +28,7 @@ modified: 2024-12-04 01:26 AM +07:00
 	- So the attention layer learn a set of basis based on the tokens within the attention window
 	- By applying the skip connection, the output activations can be seen as combinations by 2 set of basis (with and without attention)
 		- as layer went deeper, the activations become the combinations of more and more basis vectors, each of which might represent different knowledge/behaviour #hypothesis
-		- ![[assets/The effects of neural net layers on activation space/attachment_2.jpg]]
+		- ![[self-attention-visualization.jpg]]
 
 # transformer layers expand and "untangle" the activation space
 ![[Control LLM generation#transformer layers expand and "untangle" the activation space]]

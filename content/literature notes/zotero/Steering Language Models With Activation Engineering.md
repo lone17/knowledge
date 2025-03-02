@@ -4,7 +4,7 @@ aliases:
 tags:
   - integration/zotero
 modified: 2024-12-04 14:08 PM +07:00
-created: 2024-07-23 16:20 PM +07:00
+created: 2024-07-23 16:20 +07:00
 ---
 > [!Cite]
 > Turner, Alexander Matt, et al. _Steering Language Models With Activation Engineering_. arXiv:2308.10248, arXiv, 10 Oct. 2024. _arXiv.org_, [http://arxiv.org/abs/2308.10248](http://arxiv.org/abs/2308.10248).

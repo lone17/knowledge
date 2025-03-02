@@ -1,8 +1,8 @@
 ---
 aliases: 
 tags: 
-modified: 2024-11-05 18:30 PM +07:00
-created: 2024-06-12 04:47 AM +07:00
+modified: 2025-02-13 00:08 +07:00
+created: 2024-06-12 04:47 +07:00
 ---
 #maths/algebra #cs/ai/ml/theory 
 

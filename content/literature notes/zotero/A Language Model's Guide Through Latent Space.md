@@ -4,7 +4,7 @@ aliases:
 tags:
   - integration/zotero
 modified: 2024-12-04 14:08 PM +07:00
-created: 2024-07-23 16:20 PM +07:00
+created: 2024-07-23 16:20 +07:00
 ---
 > [!Cite]
 > Rütte, Dimitri von, et al. _A Language Model’s Guide Through Latent Space_. arXiv:2402.14433, arXiv, 22 Feb. 2024. _arXiv.org_, [http://arxiv.org/abs/2402.14433](http://arxiv.org/abs/2402.14433).

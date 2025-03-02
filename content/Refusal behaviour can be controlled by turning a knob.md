@@ -2,7 +2,7 @@
 aliases: 
 tags: 
 created: 2025-01-28 20:16 +07:00
-modified: 2025-02-10 13:18 +07:00
+modified: 2025-02-27 13:55 +07:00
 ---
 #cs/ai/ml/nlp/llm #cs/ai/ml/mechanistic-interpretability 
 
@@ -16,7 +16,9 @@ modified: 2025-02-10 13:18 +07:00
 Find a 2D subspace that the refusal direction resigns and rotate the activation along that space
 - How to find the 2D space ?
 	- From each layer, extract a candidate for the refusal direction
-	- Pick the best candidate amongst those (see [[Control LLM generation#How to find the refusal direction ?]]) to use as the first vector (will trying taking the mean of all candidates later #todo/experiment )
+	- Pick the best candidate amongst those (see [[Control LLM generation#How to find the refusal direction ?]]) to use as the first vector 
+		- [v] also try taking the mean of all candidates later
+			- this seems to work less reliable than picking one from the candidates
 	- Fit a PCA on the candidates and take the 1st PC to be the second vector
 	- Now we have 2 vectors to make a 2d space
 	- The idea is
@@ -32,8 +34,8 @@ Find a 2D subspace that the refusal direction resigns and rotate the activation 
 			- this might still work if we narrow down to only select candidates from a subset of middle layers where the refusal signal is strongest #todo/experiment 
 			- another problem is the number of candidates (number of layers) are much smaller than the number of dimension (the hidden size)
 				- thus most principal components are just orthogonal spaces
-				- should try extracting more candidates from each layer, for example treating each input sample as a candidate instead of taking the mean of them #todo/experiment 
-					- however this should take significantly more memory and computation
+			- should try extracting more candidates from each layer, for example treating each input sample as a candidate instead of taking the mean of them #todo/experiment 
+				- however this should take significantly more memory and computation
 - How to rotate the activation along that space ?
 	- rotate each activation by the same amount
 		- see [[Rotate from one vector to another vector in high dimensional space]]
@@ -43,6 +45,8 @@ Find a 2D subspace that the refusal direction resigns and rotate the activation 
 		- this might affect the generation on harmless inputs as they will also be rotated
 			- but the effect should be minimal
 			- we can even avoid this by using a gating mask with the price of a bit more computation
+- Show that a random plane would not have this property #todo/experiment 
+- Test adaptive angular steering with LLM benchmarks to show that other features don't deteriorate #todo/experiment 
 ## Results
 ### On Qwen2.5-7B-Instruct
 #### Observations

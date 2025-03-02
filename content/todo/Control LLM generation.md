@@ -1,6 +1,6 @@
 ---
 aliases: 
-modified: 2025-02-10 13:18 +07:00
+modified: 2025-02-20 13:41 +07:00
 tags:
   - cs/ai/ml/mechanistic-interpretability
   - "#cs/ai/ml/nlp/llm"
@@ -43,18 +43,18 @@ created: 2024-10-24 14:57 +07:00
 
 - the top graph:
 	- compute the mean vector for each data sets: 
-	  `X_mean = X.mean(dim=0)`
+	  `X_mean = X.mean(dim=<sample>)`
 	  -> we get 2 matrices `P_mean` and `N_mean` of size `layers x features`
 	- compute the cosine similarity between the 2 vectors at each layer (e.g. `P_mean[l]` and `N_mean[l]`), we get a vector of size `1 x layers`
-		  `similarity_score = cosine_similarity(P_mean, N_mean, dim=-1)`
+		  `similarity_score = cosine_similarity(P_mean, N_mean, dim=<hidden>)`
 
 - the middle graph:
 	- compute the variance vector for each data sets:
-		  `X_var = X.var(dim=0)`
+		  `X_var = X.var(dim=<sample>)`
 	  -> we get 2 matrices `P_var` and `N_var` of size `layers x features`
 	- then compute the mean along the feature dimension, we get 2 vectors of size `1 x layers`:
-		  `P_var_mean = P_var.mean(dim=-1)`
-		  `N_var_mean = N_var.mean(dim=-1)`
+		  `P_var_mean = P_var.mean(dim=<hidden>)`
+		  `N_var_mean = N_var.mean(dim=-<hidden>)`
 	- 2 curves of the same colour are for 2 residual streams, in this case are `pre` and `mid`
 
 - the  bottom graph: same as the middle one but for max instead of mean 
@@ -65,7 +65,7 @@ created: 2024-10-24 14:57 +07:00
 		- the model start with an initial state (the activation of the 1st layer) near the origin (due to input vector and the weights are usually between 0 and 1)
 		- each layer move the current state (the activation) through the activation space in some directions
 		- the directions are similar between layers, hence the state goes further and further along those directions
-		- suppose that the amount moved by each layer is within a similar range (due to layer norm), then distance travelled (the norm of the activation vector) grows linearly
+		- suppose that the step size moved by each layer is within a similar range (due to layer norm), then total distance travelled (the norm of the activation vector) grows linearly
 		- hence the variance (distance squared) grows exponentially
 	- we can analyze this by checking for shared directions between the weights across layers #todo/experiment
 
