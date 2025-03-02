@@ -2,7 +2,7 @@
 aliases: 
 tags: 
 created: 2024-11-29 19:20 PM +07:00
-title: A curious philomath
+title: Welcome to my mind
 modified: 2024-12-01 15:01 PM +07:00
 ---
 Here lies the messy clump of my #thought, #idea, #personal/opinion, **knowledge** and **misknowledge**.
