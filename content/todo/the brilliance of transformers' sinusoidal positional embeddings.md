@@ -6,7 +6,7 @@ created: 2024-02-02 23:22 PM +07:00
 
 # intuition
 - uses multiple sinusoidal waves of different frequency at time $t$
-    - related to the idea that [[(some) functions are vectors]] and [[Fourier Transform]], where 
+    - related to the idea that [[(some) functions are vectors (infinite dimensional objects)]] and [[Fourier Transform]], where 
         - functions in the frequency domain is laid out as row vectors
         - then the functions in the time domain is column vectors 
             - these are the positional embeddings

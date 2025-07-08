@@ -1,8 +1,8 @@
 ---
 aliases: 
 tags: 
-modified: 2025-02-16 02:24 +07:00
-created: 2025-01-30 03:28 +07:00
+modified: 2025-03-17 22:23 +07:00
+created: 2025-01-30 03:28 AM +07:00
 ---
 #maths/algebra 
 
@@ -11,7 +11,7 @@ In an n-dimensional, given a 2D subspace $P$ and a target direction (unit vector
 
 # Idea
 ## Naive approach
-A naive approach would be to [[Rotate any vector to a target angle in high dimensional space]], which involves the following steps:
+A naive approach would be to [[Rotate from one vector to another vector in high dimensional space]], which involves the following steps:
 1. Project $v$ onto the $\mathbb{R}^2$ mapping of $P$ to get $proj_P(x)$
 2. Find the angle $\theta$ between $proj_P(x)$ and $d$
 3. Compute the rotation matrix  $R$ using ![[Rotate from one vector to another vector in high dimensional space#^e160cf]]

@@ -4,7 +4,7 @@ aliases:
 tags:
   - integration/zotero
 modified: 2025-01-29 21:50 +07:00
-created: 2024-07-23 16:20 +07:00
+created: 2024-07-23 16:20 PM +07:00
 ---
 > [!Cite]
 > Hao, Shibo, et al. _Training Large Language Models to Reason in a Continuous Latent Space_. arXiv:2412.06769, arXiv, 11 Dec. 2024. _arXiv.org_, [https://doi.org/10.48550/arXiv.2412.06769](https://doi.org/10.48550/arXiv.2412.06769).

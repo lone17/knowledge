@@ -1,9 +1,9 @@
 ---
 aliases: 
 tags: 
-created: 2024-11-29 19:20 PM +07:00
+created: 2024-11-29 19:20 +07:00
 title: Welcome to my mind
-modified: 2024-12-01 15:01 PM +07:00
+modified: 2025-03-06 23:37 +07:00
 ---
 Here lies the messy clump of my #thought, #idea, #personal/opinion, **knowledge** and **misknowledge**.
 

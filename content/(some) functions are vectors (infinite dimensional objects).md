@@ -1,5 +1,7 @@
 ---
-modified: 2024-02-25 04:15 AM +07:00
+aliases: 
+tags: 
+modified: 2025-05-09 22:30 +07:00
 created: 2024-02-25 02:06 AM +07:00
 ---
 #maths/algebra #maths/analysis/calculus #intuition

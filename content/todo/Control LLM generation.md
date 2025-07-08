@@ -1,10 +1,10 @@
 ---
 aliases: 
-modified: 2025-02-20 13:41 +07:00
+modified: 2025-05-03 14:41 +07:00
 tags:
   - cs/ai/ml/mechanistic-interpretability
   - "#cs/ai/ml/nlp/llm"
-created: 2024-10-24 14:57 +07:00
+created: 2024-10-24 14:57 PM +07:00
 ---
 # Control Vectors vs Prompting
 - Prompting steer the generation by adding more distracting tokens to "overwhelms" the activation space.
@@ -72,6 +72,9 @@ created: 2024-10-24 14:57 +07:00
 - Transformer layers expand and "untangle" the activation space the deeper we go #hypothesis
 	- different samples would be aligned in different directions, hence they move further away
 
+- Setting high temperature (e.g. 1.0) reintroduces refusal
+	- try extracting the direction from activations from multiple generation with high temperature #todo/experiment 
+		- This might increase the quality of the extracted feature direction
 ### Visualization on several models of different sizes and families
 - Llama 3.2 3B
 	  ![[Llama3.2-3B-Instruct_pos-1.png]] 

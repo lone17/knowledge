@@ -5,7 +5,7 @@ aliases:
 tags:
   - "#cs/data-structure"
 created: 2024-09-15 02:37 AM +07:00
-modified: 2024-09-15 03:38 AM +07:00
+modified: 2025-04-21 10:31 +07:00
 ---
 # what
 - reference: [Fenwick Tree - Algorithms for Competitive Programming](https://cp-algorithms.com/data_structures/fenwick.html)

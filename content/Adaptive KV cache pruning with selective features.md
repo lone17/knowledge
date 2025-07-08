@@ -1,10 +1,10 @@
 ---
 aliases: 
-modified: 2025-03-03 04:31 +07:00
+modified: 2025-05-27 15:51 +07:00
 tags:
   - idea/research
   - cs/ai/ml/nlp/llm
-created: 2025-02-26 03:44 +07:00
+created: 2025-02-26 03:44 AM +07:00
 ---
 #cs/ai/ml/mechanistic-interpretability #idea/research 
 
@@ -17,6 +17,6 @@ Ideas:
 	  At each of these transformations, there will be a direction that won't be scaled, what does this direction represent ? #question
 	- the attention matrix A is already a Markov Matrix so it's suitable
 	- other matrices could also be considered if every row or every column sum to 1 (or approximately).
-		- it's might be true as we discussed from [[Angluar Steering]] that all Attn and MLP layers take as inputs fixed-norm vectors due to the use of [[LayerNorm]].
+		- it's might be true as we discussed from [[Angular Steering]] that all Attn and MLP layers take as inputs fixed-norm vectors due to the use of [[LayerNorm]].
 *(visualization of self attention for reference while thinking)*
 ![[self-attention-visualization.jpg]]

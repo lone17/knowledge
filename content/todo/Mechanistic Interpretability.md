@@ -6,8 +6,8 @@ tags:
   - cs/ai/ml/nlp/llm
   - cs/ai/ml/modular-learning
   - cs/ai/ml/mechanistic-interpretability
-created: 2024-10-24 15:23 +07:00
-modified: 2025-03-03 03:21 +07:00
+created: 2024-10-24 15:23 PM +07:00
+modified: 2025-06-15 00:23 +07:00
 ---
 > This is the master note for Mechanistic Interpretability
 
@@ -119,6 +119,7 @@ h(x) &=
 	\text{for each token} \\
 	(v_i \;=\; W_V x_i)
 	\end{subarray}}
+\cdot \;\;\; x
 \\
 &= \underbrace{(A \otimes W_O W_V) \;\;\; \cdot}_{
 	\begin{subarray}{l}

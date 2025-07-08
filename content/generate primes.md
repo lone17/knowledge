@@ -1,7 +1,7 @@
 ---
 aliases: 
 tags: 
-modified: 2024-09-02 17:04 PM +07:00
+modified: 2025-04-14 12:24 +07:00
 created: 2024-02-18 11:27 AM +07:00
 ---
 #cs/algo/math #maths/number-theory/prime 
@@ -126,8 +126,8 @@ def dijkstra(limit):
     - only need to extend `multiples` when the range `(primes[i - 1]**2, primes[i]**2)` changes
     - `multiples[i]` is initialized with `primes[i]**2` because smaller multiples of `primes[i]` is divisible by some prime `< primes[i]`
 #### visualization
-    ![[assets/generate primes/attachment.jpg]]
-    (`Q` is the list of multiples, index starts from 1)
+![[assets/generate primes/attachment.jpg]]
+(`Q` is the list of multiples, index starts from 1)
 ### references
 - [Dijkstra's Hidden Prime Finding Algorithm - YouTube](https://www.youtube.com/watch?v=fwxjMKBMR7s&t=779s)
     - also check the comments 

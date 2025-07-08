@@ -1,8 +1,8 @@
 ---
 aliases: 
 tags: 
-modified: 2025-03-03 04:07 +07:00
-created: 2025-03-03 03:29 +07:00
+modified: 2025-04-16 13:42 +07:00
+created: 2025-03-03 03:29 AM +07:00
 ---
 #cs #maths/algebra 
 
