@@ -4,7 +4,7 @@ aliases:
 tags:
   - integration/zotero
 modified: 2024-12-10 12:53 PM +07:00
-created: 2024-07-23 16:20 +07:00
+created: 2024-07-23 16:20 PM +07:00
 ---
 > [!Cite]
 > Zou, Andy, et al. _Representation Engineering: A Top-Down Approach to AI Transparency_. arXiv:2310.01405, arXiv, 10 Oct. 2023. _arXiv.org_, [https://doi.org/10.48550/arXiv.2310.01405](https://doi.org/10.48550/arXiv.2310.01405).

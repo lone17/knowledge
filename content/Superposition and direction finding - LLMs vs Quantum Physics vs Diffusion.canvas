@@ -2,25 +2,26 @@
 	"nodes":[
 		{"id":"9cfada067b8eef98","type":"group","x":-1200,"y":-1100,"width":580,"height":650,"label":"Diffusion"},
 		{"id":"9441934297bc72c5","type":"group","x":-520,"y":-1760,"width":880,"height":340,"label":"Superposition Hypothesis in LLMs"},
-		{"id":"66cb1d620c5c327e","type":"file","file":"literature notes/zotero/Reasoning by Superposition - A Theoretical Perspective on Chain of Continuous Thought.md","x":1240,"y":-1360,"width":670,"height":157,"color":"2"},
 		{"id":"783a762a1b03e30b","type":"file","file":"literature notes/zotero/Generative Modeling by Estimating Gradients of the Data Distribution.md","x":-1180,"y":-1060,"width":560,"height":180,"color":"2"},
 		{"id":"e588aeca28bb9e7c","type":"file","file":"literature notes/zotero/A Statistical Physics of Language Model Reasoning.md","x":660,"y":-1750,"width":540,"height":110,"color":"2"},
 		{"id":"a984f596c53a286a","type":"file","file":"todo/Control LLM generation.md","x":-1180,"y":-1690,"width":500,"height":50},
-		{"id":"783be59237b99999","type":"file","file":"literature notes/zotero/Understanding Reasoning in Thinking Language Models via Steering Vectors.md","x":1370,"y":-2080,"width":540,"height":160,"color":"2"},
 		{"id":"7c102d046d55be57","type":"file","file":"diffusion is path finding in gradient space of data distribution using Langevin sampling.md","x":-1180,"y":-735,"width":560,"height":255},
-		{"id":"a3c984a581a53607","type":"file","file":"Controlling reasoning duration with activation steering.md","x":1910,"y":-1820,"width":450,"height":180,"color":"4"},
-		{"id":"95b5bca9300607e8","type":"file","file":"literature notes/zotero/Programming Refusal with Conditional Activation Steering.md","x":2680,"y":-1560,"width":560,"height":200,"color":"2"},
 		{"id":"a9d3e06f5c6e3b46","type":"file","file":"literature notes/zotero/Harnessing the Universal Geometry of Embeddings.md","x":1100,"y":-760,"width":500,"height":125,"color":"2"},
 		{"id":"08040341bfeba990","type":"file","file":"literature notes/zotero/Information Gravity - A Field-Theoretic Model for Token Selection in Large Language Models.md","x":1060,"y":-360,"width":630,"height":200,"color":"2"},
-		{"id":"f3357fb0d5308d7b","type":"file","file":"literature notes/zotero/Linear Representations of Sentiment in Large Language Models.md","x":2080,"y":-850,"width":520,"height":167,"color":"2"},
 		{"id":"e72dbd7d5db75d6a","type":"file","file":"quantum computing deals with directions.md","x":240,"y":-760,"width":500,"height":153},
 		{"id":"da994bc2b7fdfeb8","type":"file","file":"literature notes/zotero/Mathematical Models of Computation in Superposition.md","x":-500,"y":-1700,"width":400,"height":200,"color":"2"},
+		{"id":"66cb1d620c5c327e","type":"file","file":"literature notes/zotero/Reasoning by Superposition - A Theoretical Perspective on Chain of Continuous Thought.md","x":1240,"y":-1360,"width":670,"height":157,"color":"2"},
+		{"id":"783be59237b99999","type":"file","file":"literature notes/zotero/Understanding Reasoning in Thinking Language Models via Steering Vectors.md","x":1370,"y":-2080,"width":540,"height":160,"color":"2"},
+		{"id":"a3c984a581a53607","type":"file","file":"Controlling reasoning duration with activation steering.md","x":1910,"y":-1820,"width":450,"height":180,"color":"4"},
+		{"id":"95b5bca9300607e8","type":"file","file":"literature notes/zotero/Programming Refusal with Conditional Activation Steering.md","x":2680,"y":-1560,"width":560,"height":200,"color":"2"},
+		{"id":"f3357fb0d5308d7b","type":"file","file":"literature notes/zotero/Linear Representations of Sentiment in Large Language Models.md","x":2080,"y":-850,"width":520,"height":167,"color":"2"},
 		{"id":"67820cc391a3a310","type":"file","file":"literature notes/zotero/On the Complexity of Neural Computation in Superposition.md","x":-40,"y":-1700,"width":400,"height":200,"color":"2"},
 		{"id":"1828021a61d34047","type":"file","file":"Angular Steering.md","x":240,"y":-1200,"width":400,"height":60,"color":"5"},
 		{"id":"9918c1bc124a4c63","type":"file","file":"Steering multiple behaviours jointly.md","x":2242,"y":-1125,"width":358,"height":130,"color":"4"},
 		{"id":"608b9554b5418032","type":"file","file":"LLM and quantum computing and direction finding - unified by superposition.md","x":-500,"y":-822,"width":540,"height":250,"color":"4"},
 		{"id":"fc589c8bb44e8c0d","type":"file","file":"DFS, BFS, Dynamic Programming and LLM decoding.md","x":1910,"y":-370,"width":480,"height":220},
-		{"id":"cc2340a8c671ab50","type":"file","file":"literature notes/zotero/Training Large Language Models to Reason in a Continuous Latent Space.md","x":1805,"y":40,"width":535,"height":160,"color":"2"}
+		{"id":"cc2340a8c671ab50","type":"file","file":"literature notes/zotero/Training Large Language Models to Reason in a Continuous Latent Space.md","x":1805,"y":40,"width":535,"height":160,"color":"2"},
+		{"id":"f8ab79eb9bf72e99","x":-2080,"y":-1600,"width":559,"height":289,"type":"file","file":"LLM generation is path finding in activation space, each decoder block's processing is taking a step in said space.md"}
 	],
 	"edges":[
 		{"id":"71a37967e537ca49","fromNode":"608b9554b5418032","fromSide":"right","toNode":"66cb1d620c5c327e","toSide":"left"},
@@ -51,6 +52,8 @@
 		{"id":"70b4dedf4f522394","fromNode":"cc2340a8c671ab50","fromSide":"top","toNode":"fc589c8bb44e8c0d","toSide":"bottom"},
 		{"id":"0523894ae7f941bb","fromNode":"1828021a61d34047","fromSide":"right","toNode":"9918c1bc124a4c63","toSide":"left"},
 		{"id":"a4c7fb507ac91af6","fromNode":"95b5bca9300607e8","fromSide":"bottom","toNode":"9918c1bc124a4c63","toSide":"right"},
-		{"id":"e9087928e9521f35","fromNode":"95b5bca9300607e8","fromSide":"top","toNode":"a3c984a581a53607","toSide":"right"}
+		{"id":"e9087928e9521f35","fromNode":"95b5bca9300607e8","fromSide":"top","toNode":"a3c984a581a53607","toSide":"right"},
+		{"id":"44864fa073d660f4","fromNode":"f8ab79eb9bf72e99","fromSide":"right","toNode":"a984f596c53a286a","toSide":"left"},
+		{"id":"0dae6acd33977971","fromNode":"f8ab79eb9bf72e99","fromSide":"right","toNode":"1828021a61d34047","toSide":"left"}
 	]
 }
