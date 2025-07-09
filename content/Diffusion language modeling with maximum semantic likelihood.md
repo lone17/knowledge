@@ -1,7 +1,7 @@
 ---
 aliases: 
 tags: 
-modified: 2025-07-09 12:52 +07:00
+modified: 2025-07-09 13:27 +07:00
 created: 2025-07-08 15:38 PM +07:00
 ---
 #idea/research #cs/ai/ml/nlp/diffusion-lm
@@ -19,17 +19,17 @@ _ _____ _____ fox jumps ____ ___ ____ dog
 - The selection can be based on #question
 	- a statistical model
 	- an objective that minimize the divergence of the sentence embedding between 2 consecutive steps
-		- could use a pretrained encoder like [[Harnessing the Universal Geometry of Embeddings]]
-		- learn the metric on the go
+		- could use the distance in the latent space learnt from [[Harnessing the Universal Geometry of Embeddings]] #todo/experiment
+		- learn the metric on the go #idea
 	- a semantic distance between 2 consecutive steps
-		- KL-divergence/OT distance between the prob dist of newly generated tokens
+		- KL-divergence/OT distance between the prob dist of newly generated tokens #idea
 	- an encoder model to compute $P(\text{sequence in step k})$ and $P(\text{sequence in step k+1})$ and use them to compute a metric ![[Diffusion language modeling with maximum semantic likelihood#^071c78]]
 
 
 #### denoising process
 - each step generate new tokens that doesn't change the semantic too much
 	- restrict on generating only at positions next to existing tokens. How ? #question 
-		- Filter out only positions that next to a token ? #idea 
+		- Filter out only positions that next to a token ? #todo/experiment 
 		- Make the generate-able positions dynamic, e.g. #idea
 		  The current sequence: `a quick brown fox`
 		  Generate-able positions: `_ a _ quick _ brown _ fox _`
@@ -38,7 +38,7 @@ _ _____ _____ fox jumps ____ ___ ____ dog
 		- Again, the sequence length is not fixed: ![[Diffusion language modeling with maximum semantic likelihood#^00c4f4]]
 	- How to measure the change of semantic ? #question
 		- Use the same metric from as in the noising process ?
-		- This can be used to control the "creativeness" of generation
+		- This can be used to control the "creativeness" of generation #idea
 - How to stop generation when the sequence length is not fixed ? #question 
 	- Use a special token like in AR models ? -> doesn't really make sense for this case as generation can be extended in both directions
 	- Set a threshold for predicted probs: If the logits of new tokens are all lower than a threshold then stop generation. #idea
